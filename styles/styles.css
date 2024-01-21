@@ -1,0 +1,110 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: brown;
+}
+
+header{
+    display: flex;
+    min-height: 40px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+nav a{
+    font-weight: 800;
+    padding-right: 70px;
+}
+
+nav a:hover{
+    color: rgb(179, 0, 0);
+}
+
+/*RESPONSIVO (ignorar)*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.mapa{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+/*Lineas del mapa, bordes de color*/
+.mapa path{
+    /*Relleno del mapa*/
+    fill: black;
+    stroke: aliceblue;
+    stroke-width: 2px;
+}
+
+.guerrero path{
+    fill: gray;
+}
+.guerrero :hover{
+    fill: red;
+}
+
+.morelos path{
+    fill: gray;
+}
+.morelos :hover{
+    fill: red;
+}
+
+.edomex path{
+    fill: gray;
+}
+.edomex :hover{
+    fill: red;
+}
+
+.tlaxcala path{
+    fill: gray;
+}
+
+.tlaxcala :hover{
+    fill: red;
+}
+
+.cdmx path{
+    fill: gray;
+}
+
+.cdmx :hover{
+    fill: red;
+}
+
+.queretaro path{
+    fill: gray;
+}
+
+.queretaro :hover{
+    fill: red;
+}
+
+.veracruz path{
+    fill: gray;
+}
+.veracruz :hover{
+    fill: red;
+}
